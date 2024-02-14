@@ -1,0 +1,89 @@
+body,
+html {
+  margin: 2px;
+  padding: o;
+  height: 100%;
+  background-color: rgb(220, 220, 220);
+}
+
+.divfooter {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  background-color: rgb(217, 217, 217);
+}
+
+.divfooter a {
+  text-decoration: none;
+  color: black;
+}
+.navdiv {
+  display: flex;
+  justify-content: end;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navdiv a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+}
+
+.imgText {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgText i {
+  font-size: 25px;
+}
+
+#transitionText {
+  background-color: rgb(219, 221, 222);
+  width: 500px;
+  text-align: center;
+  padding: 30px 20px 30px 20px;
+  font-family: "BadScript";
+  font-size: 40px;
+}
+
+#transitionText:hover {
+  transition: padding 4s ease-in-out;
+  background-color: rgb(220, 212, 218);
+  color: rgb(0, 0, 0);
+  padding: 40px;
+}
+
+@font-face {
+  font-family: "BadScript";
+  src: url(/fonts/Caveat-Medium.ttf);
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

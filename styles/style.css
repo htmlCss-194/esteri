@@ -1,0 +1,195 @@
+body,
+html {
+  margin: 0;
+  padding: o;
+  height: 100%;
+  background-color: rgb(216, 213, 207);
+}
+
+.slaider {
+  height: 900px;
+  animation: slaiderAnimation 10s infinite normal;
+  background-size: cover;
+  position: relative;
+  margin-left: 5px;
+  flex: 1;
+}
+
+@keyframes slaiderAnimation {
+  0% {
+    background-image: url("/images/pexels-photo-11844892.jpeg");
+  }
+  50% {
+    background-image: url("/images/pexels-olasupo-john-11930775.jpg");
+  }
+  100% {
+    background-image: url("/images/pexels-photo-8433515.jpeg");
+  }
+}
+
+@font-face {
+  font-family: "LukiestGuy";
+  src: url(/fonts/LuckiestGuy-Regular.ttf);
+}
+
+.logoWrapper {
+  font-family: "LukiestGuy";
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(/fonts/Caveat-Medium.ttf);
+}
+
+#logoText {
+  font-family: "Caveat";
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "BadScript";
+  src: url(/fonts/Caveat-Medium.ttf);
+}
+
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-direction: column;
+}
+
+.menuIcon {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-direction: column;
+  color: #090909;
+  font-size: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoSlaider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobileBurgerMenu {
+  min-width: none;
+  margin: auto; rgb(216, 213, 207);
+  height: 900px;
+  color:rgb(216, 213, 207);
+  margin-right: 10px;
+  flex: 1;
+}
+
+.mobileBurgerMenu a {
+  text-decoration: none;
+}
+
+.upperNav {
+  overflow: hidden;
+  background-color: rgb(216, 213, 207);
+  position: relative;
+}
+
+.upperNav .navLinks {
+  display: none;
+}
+
+.upperNav a {
+  color: rgb(17, 17, 18);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+.upperNav a:hover {
+  background-color:rgb(216, 213, 207);
+  color: beige;
+}
+
+.upperNav .menuIcon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: rgb(216, 213, 207);
+  color: rgb(216, 213, 207);
+}
+
+.mainText p {
+  color: rgb(7, 7, 7);
+  font-family: "BadScript";
+  font-size: 70px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.mainText i {
+  font-size: 40px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(36, 35, 35);
+}
+
+.mainText a {
+  color: black;
+  font-family: "BadScript";
+  font-size: 45px;
+}
+
+.divfooter {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  background-color: rgb(216, 213, 207);
+}
+
+.divfooter a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

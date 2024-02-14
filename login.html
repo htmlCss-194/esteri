@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles/login.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navdiv">
+          <nav>
+            <a href="index.html">Back to Home </a>
+            <a href="contact.html">Contact</a>
+            <a href="shopNow.html">Shop Now</a>
+            <a href="register.html">Register</a>
+          </nav>
+        </div>
+        <h1>BigSizeGeorgia</h1>
+      </header>
+      <div class="mainContent">
+        <main>
+          <div class="maindiv">
+            <div class="main-div-input">
+              <h2>Login</h2>
+              <form action="">
+                <input
+                  type="text"
+                  name=""
+                  id="login"
+                  placeholder="Your username"
+                />
+              </form>
+            </div>
+            <div class="main-div-input">
+              <h2>Password</h2>
+              <form action="">
+                <input
+                  type="password"
+                  name=""
+                  id="password"
+                  placeholder="Your Password"
+                />
+                <input
+                  type="button"
+                  id="button"
+                  value="Press"
+                  onclick="password()"
+                />
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+      <script>
+        function password() {
+          var username = document.getElementById("login").value;
+          var password = document.getElementById("password").value;
+          event.preventDefault();
+          if (username == "log" && password == "pass") {
+            window.location.href = "loginSuccess.html";
+          } else {
+            window.location.href = "loginFailed.html";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

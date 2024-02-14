@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logoSlaider">
+          <div class="slaider">
+            <div class="logoWrapper">
+              <h1>BSG</h1>
+              <p id="logoText">BIG SIZE GEORGIA</p>
+            </div>
+          </div>
+          <div class="mobileBurgerMenu">
+            <div class="upperNav">
+              <div class="navLinks">
+                <a href="index.html"> Home </a>
+                <a href="contact.html"> Contact </a>
+                <a href="shopNow.html"> Shop Now</a>
+                <a href="login.html">Log in</a>
+                <a href="register.html">Register</a>
+                <a href="blog.html">Blog</a>
+              </div>
+            </div>
+            <a
+              href="javascript:void(0);"
+              class="menuIcon"
+              onclick="displayMenu()"
+              ><i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="mainText">
+              <p>Spring & Summer</p>
+              <p>Collection 2024</p>
+              <i class="fa-solid fa-arrow-right"
+                ><a href="shopNow.html"> Shop Now</a></i
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <script type="text/javascript">
+        function displayMenu() {
+          let menuLinks = document.querySelector(".navLinks");
+          if (menuLinks.style.display === "flex") {
+            menuLinks.style.display = "none";
+          } else {
+            menuLinks.style.display = "flex";
+          }
+        }
+      </script>
+
+      <div class="divfooter">
+        <h3>Socials</h3>
+        <a href="">Instagram</a>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.facebook.com/profile.php?id=100093882166430"
+          >Facebook</a
+        >
+        <i class="fa-brands fa-facebook"></i>
+        <a href="">Gmail</a>
+        <a
+          href="javascript:void(0);"
+          class="menuIcon"
+          onclick="displayMenu()"
+        ></a>
+      </div>
+
+      <footer>BSG © 2024.</footer>
+    </div>
+  </body>
+</html>

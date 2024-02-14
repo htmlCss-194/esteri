@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/register.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="navdiv">
+          <nav>
+            <a href="index.html">Back to Home </a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Log in</a>
+            <a href="shopNow.html">Shop Now</a>
+          </nav>
+        </div>
+        <h1>BigSizeGeorgia</h1>
+        <main>
+          <div class="maindiv">
+            <form id="form1" action="">
+              <input id="username" type="text" placeholder="Name" />
+              <br />
+              <br />
+              <input id="lastname" type="text" placeholder="Last Name" />
+              <br />
+              <br />
+              <input id="password" type="password" placeholder="Password" />
+              <br />
+              <br />
+              <input type="text" name="" placeholder="Your Mail" id="gmaill" />
+              <br />
+              <br />
+              <input
+                onclick="form2()"
+                id="input-btn"
+                type="button"
+                value="Start"
+              />
+            </form>
+          </div>
+        </main>
+
+        <script>
+          function form2() {
+            var login = document.getElementById("username").value;
+            var login = document.getElementById("lastrname").value;
+            var password = document.getElementById("password").value;
+            var gmaill = document.getElementById("gmail").value;
+            event.preventDefault();
+            if (username == "log" && password == "pass" && gmaill == "gmail") {
+              window.location.href = "/loginSuccess.html";
+            } else {
+              window.location.href = "/loginFailed.html";
+            }
+          }
+        </script>
+      </header>
+    </div>
+  </body>
+</html>

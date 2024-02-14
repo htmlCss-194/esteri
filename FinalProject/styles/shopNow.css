@@ -1,0 +1,65 @@
+body,
+html {
+  margin: 0;
+  padding: o;
+  height: 100%;
+  background-color: rgb(253, 191, 105);
+}
+
+img {
+  width: 500px;
+  height: 600px;
+}
+
+.gallery {
+  /* display: flex; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrapperDIV {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.rendomData {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navdiv a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

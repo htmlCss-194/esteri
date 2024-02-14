@@ -1,0 +1,55 @@
+body,
+html {
+  margin: 0;
+  padding: o;
+  height: 100%;
+  background-color: rgb(255, 253, 199);
+  border: 2px solid rgb(55, 54, 54);
+}
+
+.mainContent {
+  background-color: rgb(255, 253, 199);
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navdiv a {
+  text-decoration: none;
+  color: black;
+}
+
+.divfooter {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
